@@ -33,7 +33,7 @@ const AuthModule = {
 	actions: {
 		async login(context, user) {
 			// console.log(user)
-			const url = `${API_URL}/api/v1/user/token/auth/`
+			const url = `${API_URL}/api/v1/auth/token/`
 
 			try 
 			{
