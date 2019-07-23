@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 // import routing components
 import store from '../store/store.js'
 import Login from '../components/Login.vue'
+import Users from '../components/views/Users.vue'
 import Todos from '../components/views/Todos.vue'
 import Events from '../components/views/Events.vue'
 import Dashboard from '../components/Dashboard.vue'
@@ -39,6 +40,14 @@ const router = new VueRouter({
 			path: '/todo', 
 			name: 'todo', 
 			component: Todos,
+			meta : { 
+				requiresAuth : true
+			}
+		},
+		{ 
+			path: '/user', 
+			name: 'user', 
+			component: Users,
 			meta : { 
 				requiresAuth : true
 			}

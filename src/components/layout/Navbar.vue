@@ -7,6 +7,7 @@
 
 		<!-- Links -->
 		<ul class="navbar-nav" v-if="$store.getters.isLoggedIn">
+
 			<li class="nav-item">
 				<router-link to="/event" class="nav-link">Events</router-link>
 			</li>
@@ -14,8 +15,12 @@
 				<router-link to="/todo" class="nav-link">Todos</router-link>
 			</li>
 			<li class="nav-item">
+				<router-link to="/user" class="nav-link">Users</router-link>
+			</li>
+			<li class="nav-item">
 				<router-link to="/login" class="nav-link">Logout</router-link>
 			</li>
+			
 		</ul>
 		
 	</nav>

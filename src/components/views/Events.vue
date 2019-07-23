@@ -15,6 +15,10 @@
 			<p><button class="btn btn-danger mb-2" v-on:click="seen = !seen">Toggle</button></p>
 		</div>
 
+		<hr>
+		<UploadImage></UploadImage>
+
+		<hr>
 		<AddEvent></AddEvent>
 
 	</div>
@@ -25,12 +29,14 @@
 
 import AddEvent from './AddEvent.vue'
 import DisplayEvent from './DisplayEvent.vue'
+import UploadImage from './UploadImage.vue'
 
 export default {
 	name: 'Events',
 	components: {
 		DisplayEvent,
-		AddEvent
+		AddEvent,
+		UploadImage
 	},
 	data() {
 		return {
