@@ -4,7 +4,7 @@
 
 		<form class="form-inline todo-form" @submit="addTodo">
 			<label for="todo" class="mb-2 mr-sm-2">Todo:</label>
-			<input type="text" v-model="todo.title" class="form-control mb-2 mr-sm-2" id="todo" placeholder="Add Todo..." />
+			<input type="text" v-model="todo.title" class="form-control mb-2 mr-sm-2" placeholder="Add Todo..." />
 			<button type="submit" class="btn btn-info mb-2">Save</button>
 		</form>
 

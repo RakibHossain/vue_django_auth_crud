@@ -15,8 +15,7 @@ const EventModule = {
 			var reader = new FileReader()
 			reader.onload = (e) => {
 				state.images.push(e.target.result)
-			};
-
+			}
 			reader.readAsDataURL(file)
 		},
 		REMOVE_FILE(state, index) {

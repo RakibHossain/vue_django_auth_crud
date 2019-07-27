@@ -13,11 +13,11 @@
 				<form @submit="login">
 
 					<div class="form-group">
-						<label for="email">Email:</label>
-						<input type="email" v-model="user.username" class="form-control" placeholder="Enter email">
+						<label for="username">Username or Email:</label>
+						<input type="text" v-model="user.username" class="form-control" placeholder="Enter username or email">
 					</div>
 					<div class="form-group">
-						<label for="pwd">Password:</label>
+						<label for="password">Password:</label>
 						<input type="password" v-model="user.password" class="form-control" placeholder="Enter password">
 					</div>
 

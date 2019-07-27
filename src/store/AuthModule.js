@@ -50,6 +50,7 @@ const AuthModule = {
 			{
 				context.commit('auth_error')
 				localStorage.removeItem('token')
+				alert('Please enter correct login credentials !')
 				console.error(e)
 			}
 		},
